@@ -85,5 +85,7 @@ fabric.properties
 
 # User Defined
 *.log
+.gradle/
+build/
 
 # End of https://www.gitignore.io/api/intellij
