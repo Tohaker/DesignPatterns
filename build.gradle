@@ -20,4 +20,6 @@ defaultTasks('clean', 'build')
 
 if (!project.hasProperty("mainClass")) {
     mainClassName = "com.pluralsight.singleton.DbSingletonDemo"
+} else {
+    mainClassName = mainClass
 }
