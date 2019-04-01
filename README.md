@@ -11,7 +11,7 @@ Each package in the [java](java) folder contains detailed instructions on how th
 
 You can run any Demo file within this project with the following gradle command:
 ```$xslt
-gradlew clean build -PmainClass=com.pluralsight.singleton.DbSingletonDemo execute
+gradlew clean build -PmainClass=com.pluralsight.singleton.DbSingletonDemo run
 ```
 Where the `-PmainClass` argument should be replaced by the location of Demo file. This will not work if you give Gradle
 a file without a `main` method.
