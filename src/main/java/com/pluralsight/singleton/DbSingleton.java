@@ -41,10 +41,10 @@ public class DbSingleton {
         return instance;
     }
 
-    public Connection getConnection() {
-        if(conn == null) {
+    public Connection getConnection() throws SQLException {
+        if(conn == null || conn.isClosed()) {
             synchronized (DbSingleton.class) {
-                if(conn == null) {
+                if(conn == null || conn.isClosed()) {
                     try {
                         String dbUrl = "jdbc:derby:memory:codejava/webdb;create=true";
 
